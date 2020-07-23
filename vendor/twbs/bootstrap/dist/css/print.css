@@ -1,0 +1,66 @@
+  /* cuando vayamos a imprimir ... */
+  @media print{
+    @page {
+        size: portrait;
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+        margin-right: 0.2cm;
+        margin-left: 1cm;
+        zoom: 100%;
+    }
+    /* indicamos el salto de pagina */
+    .saltoDePagina{
+      display:block;
+      page-break-before:always;
+    }
+    header, footer, nav, aside, div.card-header {
+      display: none;
+    }
+    div.sinBorde {
+      border-left: 0.5px solid grey;
+      border-top: 0.5px solid grey;  
+      padding-bottom: 0em;
+      margin-bottom: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+      height: 25px;
+    }
+    div.sinBorde1 {
+    border-left: 0.5px solid grey;
+    
+    padding-bottom: 0em;
+    margin-bottom: 0px;
+    height: 30px;
+    }
+    div.sinBorde2 {
+    
+    border-left: 0.5px solid grey;
+    padding-bottom: 4em;
+    margin-bottom: 0px;
+    height: 60px;
+    }
+    div.sinBorde4 {
+      border-left: 0.5px solid grey;
+    
+      padding-bottom: 0em;
+      margin-bottom: 0px;
+      height: 25px;
+    }
+    div.sinBorde5 {
+      border-left: 0.5px solid grey;
+      border-top: 0.5px solid grey;
+      padding-bottom: 0em;
+      margin-bottom: 0px;
+      height: 25px;
+    }
+    div.forRow{
+      border-top: 0.5px solid grey;
+      border-bottom: 0.5px solid grey;
+    
+    }
+    .h{
+       border: 0.1mm solid black;
+    }
+    
+  }
+  
